@@ -2,14 +2,16 @@ package com.example.backend.pojo;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author HDH
  * @version 1.0
  */
 @Entity
-@Table(name="t_comment")
+@Table(name = "t_comment")
 public class Comment {
     /*评论
     子评论
@@ -21,17 +23,31 @@ public class Comment {
     @Id
     @GeneratedValue
     private Long id;
-    private String nickname;
-    private String content;
-    private String avatar;
+    private String nickname;//昵称
+    private String content;//内容
+    private String avatar;//头像
     @Temporal(TemporalType.TIMESTAMP)
-    private Date creatTime;
+    private Date creatTime;//发布时间
+    @ManyToOne
+    private Blog blog;//一个blog多个评论
+    @OneToMany
+    private List<Comment> replyComments = new ArrayList<>();//一个评论有多个子评论
+    @ManyToOne
+    private Comment parentComment;//一个评论对应至多一个父评论
 
     public Comment() {
     }
 
     public Long getId() {
         return id;
+    }
+
+    public Blog getBlog() {
+        return blog;
+    }
+
+    public void setBlog(Blog blog) {
+        this.blog = blog;
     }
 
     public void setId(Long id) {

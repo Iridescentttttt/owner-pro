@@ -2,7 +2,9 @@ package com.example.backend.pojo;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author HDH
@@ -22,15 +24,6 @@ public class Blog {
     @Id
     @GeneratedValue
     private Long id;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     private String title;//标题
     private String content;//内容
     private int numOfView;//浏览数目
@@ -40,10 +33,37 @@ public class Blog {
     private boolean commentable;//是否允许评论
     private boolean forward;//是否转发
     @Temporal(TemporalType.TIMESTAMP)
-    private Date creatTime;
+    private Date creatTime;//发布时间
     @Temporal(TemporalType.TIMESTAMP)
-    private Date updateTime;
+    private Date updateTime;//更新时间
+    @ManyToOne
+    private User user;//一个博客一个用户
+    @OneToMany(mappedBy = "blog")//一个博客多个评论
+    private List<Comment> comments=new ArrayList<>();
 
+    public User getUser() {
+        return user;
+    }
+
+    public List<Comment> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Date getCreatTime() {
         return creatTime;
     }

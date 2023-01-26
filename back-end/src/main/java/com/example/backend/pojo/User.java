@@ -2,14 +2,16 @@ package com.example.backend.pojo;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author HDH
  * @version 1.0
  */
 @Entity
-@Table(name="t_user")
+@Table(name = "t_user")
 public class User {
     @Id
     @GeneratedValue
@@ -24,10 +26,9 @@ public class User {
     所处单位
     个人简介
     博客发布*/
+    private Long id;
     private String username; //用户名
     private String password; //密码
-
-
     private String nickname; //昵称
     private String address;  //地址
     private String introduction;  //简介
@@ -41,6 +42,10 @@ public class User {
 
     public User() {
     }
+
+    //一个用户多个博客
+    @OneToMany(mappedBy = "user")
+    private List<Blog> blogs = new ArrayList<>();
 
     @Override
     public String toString() {
@@ -56,8 +61,33 @@ public class User {
                 ", avatar='" + avatar + '\'' +
                 '}';
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public String getUsername() {
         return username;
+    }
+
+    public Date getRegisterTime() {
+        return registerTime;
+    }
+
+    public void setRegisterTime(Date registerTime) {
+        this.registerTime = registerTime;
+    }
+
+    public List<Blog> getBlogs() {
+        return blogs;
+    }
+
+    public void setBlogs(List<Blog> blogs) {
+        this.blogs = blogs;
     }
 
     public void setUsername(String username) {
@@ -79,7 +109,6 @@ public class User {
     public void setNickname(String nickname) {
         this.nickname = nickname;
     }
-
 
 
     public String getAddress() {
