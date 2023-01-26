@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="owner-pro" />
+    </loaded-modules>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="28d12326-f022-4f3f-b252-00991b715fb1" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,16 +33,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/hdh/Documents/github/新建文件夹/JavaLearningProgress/springboot/Note01_&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "D:/hdh/Documents/github/owner-pro/back-end/src/main/resources",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hdh\Documents\github\owner-pro\back-end\src\main\resources" />
+      <recent name="D:\hdh\Documents\github\owner-pro\ownerpro-bac-end\src\main\resources" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="owner-pro" />
@@ -45,6 +59,13 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="owner-pro" />
       <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BackEndApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="back-end" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.backend.web.BackEndApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -60,6 +81,10 @@
       <updated>1674728012218</updated>
       <workItem from="1674728013395" duration="1143000" />
       <workItem from="1674729173955" duration="367000" />
+      <workItem from="1674730338251" duration="452000" />
+      <workItem from="1674731166017" duration="499000" />
+      <workItem from="1674731676198" duration="148000" />
+      <workItem from="1674731835600" duration="4367000" />
     </task>
     <servers />
   </component>
