@@ -11,7 +11,7 @@ import java.util.List;
  * @version 1.0
  */
 @Entity
-@Table(name="t_blog")
+@Table(name = "t_blog")
 public class Blog {
     /*标题
     内容
@@ -39,7 +39,7 @@ public class Blog {
     @ManyToOne
     private User user;//一个博客一个用户
     @OneToMany(mappedBy = "blog")//一个博客多个评论
-    private List<Comment> comments=new ArrayList<>();
+    private List<Comment> comments = new ArrayList<>();
 
     public User getUser() {
         return user;
@@ -64,6 +64,7 @@ public class Blog {
     public void setId(Long id) {
         this.id = id;
     }
+
     public Date getCreatTime() {
         return creatTime;
     }

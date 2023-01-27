@@ -32,35 +32,36 @@ public class User {
     private String nickname; //昵称
     private String address;  //地址
     private String introduction;  //简介
-    private int age;    //年龄
+    private String birthday;    //生日
     private String hometown; //籍贯
     private String unit; //单位
     //头像
     private String avatar; //头像
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date registerTime;//注册时间
+
 
     public User() {
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", address='" + address + '\'' +
+                ", introduction='" + introduction + '\'' +
+                ", birthday='" + birthday + '\'' +
+                ", hometown='" + hometown + '\'' +
+                ", unit='" + unit + '\'' +
+                ", avatar='" + avatar + '\'' +
+                ", blogs=" + blogs +
+                '}';
     }
 
     //一个用户多个博客
     @OneToMany(mappedBy = "user")
     private List<Blog> blogs = new ArrayList<>();
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", nickname='" + nickname + '\'' +
-                ", address='" + address + '\'' +
-                ", introduction='" + introduction + '\'' +
-                ", age=" + age +
-                ", hometown='" + hometown + '\'' +
-                ", unit='" + unit + '\'' +
-                ", avatar='" + avatar + '\'' +
-                '}';
-    }
 
     public Long getId() {
         return id;
@@ -72,22 +73,6 @@ public class User {
 
     public String getUsername() {
         return username;
-    }
-
-    public Date getRegisterTime() {
-        return registerTime;
-    }
-
-    public void setRegisterTime(Date registerTime) {
-        this.registerTime = registerTime;
-    }
-
-    public List<Blog> getBlogs() {
-        return blogs;
-    }
-
-    public void setBlogs(List<Blog> blogs) {
-        this.blogs = blogs;
     }
 
     public void setUsername(String username) {
@@ -110,7 +95,6 @@ public class User {
         this.nickname = nickname;
     }
 
-
     public String getAddress() {
         return address;
     }
@@ -127,12 +111,12 @@ public class User {
         this.introduction = introduction;
     }
 
-    public int getAge() {
-        return age;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
     public String getHometown() {
@@ -157,5 +141,13 @@ public class User {
 
     public void setAvatar(String avatar) {
         this.avatar = avatar;
+    }
+
+    public List<Blog> getBlogs() {
+        return blogs;
+    }
+
+    public void setBlogs(List<Blog> blogs) {
+        this.blogs = blogs;
     }
 }
