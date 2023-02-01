@@ -58,7 +58,7 @@
       <recent name="com.example.backend" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.MDUtils">
+  <component name="RunManager" selected="Spring Boot.BackEndApplication">
     <configuration name="MDUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.backend.util.MDUtils" />
       <module name="back-end" />
@@ -114,6 +114,7 @@
       <workItem from="1674731835600" duration="11240000" />
       <workItem from="1674801146391" duration="6297000" />
       <workItem from="1674810258561" duration="77000" />
+      <workItem from="1675259971118" duration="2987000" />
     </task>
     <servers />
   </component>
