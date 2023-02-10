@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>咸鱼洗礼二人组</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .register .register_info .username input,
+        .register .register_info .password input {
+            border-width: 0px;
+            font-size: 30px;
+        }
+
+        .register .register_info .username input:focus,
+        .register .register_info .password input:focus {
+            outline: none;
+        }
+
+        .useless {
+            color: rgba(0, 0, 0, 0);
+        }
+
+        body {
+            background-image: linear-gradient(to right, rgba(4, 181, 169, 1), rgba(0, 46, 252, 0.61));
+        }
+
+        .register {
+            position: absolute;
+            left: 50%;
+            margin-left: -648px;
+            top: 50%;
+            margin-top: -298px;
+            height: 597px;
+            width: 1296px;
+            background-color: #BDFFF7;
+            box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, .3);
+        }
+
+        .register img {
+            display: inline-block;
+            height: 578px;
+            width: 817px;
+            border-radius: 30px;
+            margin: 8px;
+        }
+
+        .register .register_info {
+            display: inline-block;
+            width: 446px;
+            height: 579px;
+            border-radius: 30px;
+            background-color: #FFF;
+            overflow: hidden;
+        }
+
+        .register .register_info h2 {
+            font-size: 56px;
+            font-family: 华文新魏;
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        .register .register_info .username,
+        .register .register_info .password {
+            display: inline-block;
+            width: 360px;
+            height: 32px;
+            border-bottom: 5px solid #2047F5;
+            margin: 36px 37px;
+            padding: 10px;
+        }
+
+        .register .register_info .forget_password {
+            overflow: hidden;
+        }
+
+        .register .register_info .forget_password a {
+            float: right;
+            color: rgba(119, 48, 207, 1);
+            margin: 3px 28px;
+            font-size: 16px;
+        }
+
+        .register .register_info .button {
+            overflow: hidden;
+            margin: 0px 33px;
+        }
+
+        .register .register_info .button input {
+            float: left;
+            height: 60px;
+            width: 170px;
+            border-radius: 40px;
+            margin: 56px 10px;
+            color: white;
+            font-size: 36px;
+            font-family: 华文新魏;
+            margin: 51 6px;
+            background-color: rgba(0, 0, 0, 0);
+            background-image: linear-gradient(to right, rgba(0, 99, 247, 1), rgba(103, 15, 255, 0.4));
+        }
+
+        .register .register_info .button input:hover {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="useless">1</div>
+    <div class="register">
+        <img src="background1.jpg" class="background1">
+        <div class="register_info">
+            <h2>Register</h2>
+            <div class="username">
+                <input type="text" value="User Name" onfocus="javascript:if(this.value=='User Name')this.value='';">
+            </div>
+            <div class="password">
+                <input type="password" value="Password" onfocus="javascript:if(this.value=='Password')this.value='';">
+            </div>
+            <div class="forget_password"><a href="#">Forget the password?</a></div>
+            <div class="button">
+                <input type="submit" value="登录" style="cursor: pointer">
+                <input type="button" value="注册" style="cursor: pointer">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
