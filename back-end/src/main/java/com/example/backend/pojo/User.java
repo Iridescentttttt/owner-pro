@@ -10,7 +10,7 @@ import java.util.List;
  * @version 1.0
  */
 @Entity
-@Table(name = "t_user")
+@Table(name = "tb_user")
 public class User {
     @Id
     @GeneratedValue

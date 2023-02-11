@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .main {
+            width: 2100px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-image: url(background3.jpg);
+            background-repeat: repeat;
+            background-size: 100% 100%;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .navigation {
+            padding: 10px 0;
+            height: 86px;
+            background-image: linear-gradient(to right, rgba(255, 208, 161, 1), rgba(0, 238, 255, 0.5));
+        }
+
+        .navigation div {
+            display: block;
+            margin: 10px auto;
+        }
+
+        .navigation div {
+            width: 600px;
+            background-color: #c2fdff;
+            border-radius: 30px;
+            color: rgba(42, 130, 228, 1);
+            font-size: 36px;
+            font-family: 华文新魏;
+            border-width: 0px;
+            padding: 0 20px;
+        }
+
+        .navigation div .search {
+            width: 400px;
+            height: 64px;
+            background-color: #c2fdff;
+            border-radius: 30px;
+            color: rgba(42, 130, 228, 1);
+            font-size: 36px;
+            font-family: 华文新魏;
+            border-width: 0px;
+            padding: 0 20px;
+        }
+
+        .navigation img {
+            width: 52px;
+            height: 49px;
+            float: right;
+            padding: 7px 10px;
+        }
+
+        .navigation .exit {
+            float: right;
+            margin: 10px 23px;
+            height: 64px;
+            width: 193px;
+            border-radius: 50px;
+            color: white;
+            font-size: 36px;
+            font-family: 华文新魏;
+            background-image: linear-gradient(to bottom, rgba(0, 55, 255, 1), rgba(0, 16, 220, 0.3));
+        }
+
+        .main .change_page {
+            float: left;
+            background-color: rgba(255, 255, 255, 0.25);
+            width: 400px;
+            height: 945px;
+            border-radius: 40px;
+            margin: 25px 25px;
+        }
+
+        .main .change_page .history,
+        .change_page .info_centre {
+            width: 270px;
+            height: 67px;
+            background-color: rgba(255, 255, 255, 0.2);
+            font-size: 36px;
+            border-radius: 20px;
+            margin: 59px 63px;
+            text-align: center;
+            padding-top: 11px;
+        }
+
+        .main .change_page .history a,
+        .main .change_page .info_centre a {
+            color: black;
+            ;
+        }
+
+        .main .change_page .history a:hover,
+        .main .change_page .info_centre a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        .main .information {
+            width: 1420px;
+            height: 945px;
+            border-radius: 40px;
+            background-color: rgba(255, 255, 255, 0.25);
+            float: left;
+            margin: 25px 40px;
+            padding: 30px 30px;
+        }
+
+        .main .information div {
+            margin: 45px 50px;
+            font-size: 36px;
+        }
+
+        .main .information div input {
+            background-color: rgba(0, 0, 0, 0);
+            border-width: 0px;
+            font-size: 36px;
+            border-bottom: solid;
+            margin-left: 200px;
+        }
+
+        .main .information div .info1 {
+            margin-left: 127px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <input type="button" value="退出登录" style="cursor: pointer" class="exit">
+        <div><input class="search" type=" text" value="搜索关键字"
+                onfocus="javascript:if(this.value=='搜索关键字')this.value='';">
+            <a href="#"><img src="search.jpg"></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="change_page">
+            <div class="history"><a href="个人博客.html">历史博客</a></div>
+            <div class="info_centre"><a href="个人中心.html">个人中心</a></div>
+        </div>
+        <div class="information">
+            <div>昵称<input type="text" class="info"></div>
+            <div>生日<input type="text" class="info"></div>
+            <div>籍贯<input type="text" class="info"></div>
+            <div>所处地区<input type="text" class="info1"></div>
+            <div>所处单位<input type="text" class="info1"></div>
+            <div>个人简介<input type="text" class="info1"></div>
+        </div>
+    </div>
+</body>
+
+</html>

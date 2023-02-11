@@ -7,15 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="back-end" />
+        <module name="newone" />
+        <module name="Last" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="back-end" target="17" />
+      <module name="Last" target="17" />
+      <module name="newone" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Last" options="-parameters" />
       <module name="back-end" options="-parameters" />
+      <module name="newone" options="-parameters" />
     </option>
   </component>
 </project>

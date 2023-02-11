@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .main {
+            width: 2100px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-image: url(background3.jpg);
+            background-repeat: repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .navigation {
+            padding: 10px 0;
+            height: 86px;
+            background-image: linear-gradient(to right, rgba(255, 208, 161, 1), rgba(0, 238, 255, 0.5));
+        }
+
+        .navigation div {
+            display: block;
+            margin: 10px auto;
+        }
+
+        .navigation div {
+            width: 600px;
+            background-color: #c2fdff;
+            border-radius: 30px;
+            color: rgba(42, 130, 228, 1);
+            font-size: 36px;
+            font-family: 华文新魏;
+            border-width: 0px;
+            padding: 0 20px;
+        }
+
+        .navigation div .search {
+            width: 400px;
+            height: 64px;
+            background-color: #c2fdff;
+            border-radius: 30px;
+            color: rgba(42, 130, 228, 1);
+            font-size: 36px;
+            font-family: 华文新魏;
+            border-width: 0px;
+            padding: 0 20px;
+        }
+
+        .navigation img {
+            width: 52px;
+            height: 49px;
+            float: right;
+            padding: 7px 10px;
+        }
+
+        .navigation .exit {
+            float: right;
+            margin: 10px 23px;
+            height: 64px;
+            width: 193px;
+            border-radius: 50px;
+            color: white;
+            font-size: 36px;
+            font-family: 华文新魏;
+            background-image: linear-gradient(to bottom, rgba(0, 55, 255, 1), rgba(0, 16, 220, 0.3));
+        }
+
+        .main .change_page {
+            float: left;
+            background-color: rgba(255, 255, 255, 0.25);
+            width: 400px;
+            height: 945px;
+            border-radius: 40px;
+            margin: 25px 25px;
+        }
+
+        .main .change_page .history,
+        .change_page .info_centre {
+            width: 270px;
+            height: 67px;
+            background-color: rgba(255, 255, 255, 0.2);
+            font-size: 36px;
+            border-radius: 20px;
+            margin: 59px 63px;
+            text-align: center;
+            padding-top: 11px;
+        }
+
+        .main .change_page .history a,
+        .main .change_page .info_centre a {
+            color: black;
+            ;
+        }
+
+        .main .change_page .history a:hover,
+        .main .change_page .info_centre a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        .main .blog {
+            overflow: hidden;
+            width: 1420px;
+            border-radius: 40px;
+            background-color: rgba(255, 255, 255, 0.25);
+            float: left;
+            margin: 25px 40px;
+            padding: 30px 30px;
+        }
+
+        .main .blog .blog1 {
+            width: 1330px;
+            height: 330px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: #4A4A4A;
+            margin: 30px 30px;
+            padding: 0px 20px;
+        }
+
+        .main .blog .blog2 {
+            width: 1330px;
+            height: 330px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: #4A4A4A;
+            margin: 30px 30px;
+            padding: 0px 20px;
+        }
+
+        .main .blog .blog3 {
+            width: 1330px;
+            height: 330px;
+            border-style: solid;
+            border-width: 7px;
+            border-color: #4A4A4A;
+            margin: 30px 30px;
+            padding: 0px 20px;
+        }
+
+        .head {
+            width: 700px;
+            height: 65px;
+        }
+
+        .head .profile,
+        .head .username,
+        .head .date {
+            float: left;
+        }
+
+        .head .profile {
+            width: 66px;
+            height: 66px;
+            border-radius: 33px;
+            background-image: url("头像.jpg");
+            background-size: cover;
+        }
+
+        .head .username {
+            font-size: 36px;
+            margin-left: 30px;
+            margin-top: 2px;
+        }
+
+        .head .date {
+            font-size: 36px;
+            margin-left: 30px;
+            color: rgba(128, 128, 128, 1);
+            margin-top: 5px;
+        }
+
+        .head .content {
+            font-size: 26px;
+            font-family: 华文新魏;
+            border-width: 0;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+
+        .remark {
+            width: 1330px;
+            height: 90px;
+        }
+
+        .remark .share,
+        .remark .comment,
+        .remark .like {
+            float: right;
+        }
+
+        .remark .share {
+            width: 70px;
+            height: 70px;
+            background-image: url("转发.png");
+            background-size: cover;
+        }
+
+        .remark .comment {
+            width: 70px;
+            height: 70px;
+            background-image: url("评论.png");
+            background-size: cover;
+            margin-right: 30px;
+        }
+
+        .remark .like {
+            width: 70px;
+            height: 70px;
+            background-image: url("点赞.png");
+            background-size: cover;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <input type="button" value="退出登录" style="cursor: pointer" class="exit">
+        <div><input class="search" type=" text" value="搜索关键字"
+                onfocus="javascript:if(this.value=='搜索关键字')this.value='';">
+            <a href="#"><img src="search.jpg"></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="change_page">
+            <div class="history"><a href="个人博客.html">历史博客</a></div>
+            <div class="info_centre"><a href="个人中心.html">个人中心</a></div>
+        </div>
+        <div class="blog">
+            <div class="blog1">
+                <div class="head">
+                    <div class="profile"></div>
+                    <div class="username">username</div>
+                    <div class="date">2023/2/13</div>
+                    <div class="content"><textarea class="content" placeholder="content..." cols="80" rows="6"
+                            id="content1"></textarea></div>
+                    <div class="remark">
+                        <div class="share"></div>
+                        <div class="comment"></div>
+                        <div class="like"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog2">
+                <div class="head">
+                    <div class="profile"></div>
+                    <div class="username">username</div>
+                    <div class="date">2023/2/13</div>
+                    <div class="content"><textarea class="content" placeholder="content..." cols="80" rows="6"
+                            id="content2"></textarea></div>
+                    <div class="remark">
+                        <div class="share"></div>
+                        <div class="comment"></div>
+                        <div class="like"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog3">
+                <div class="head">
+                    <div class="profile"></div>
+                    <div class="username">username</div>
+                    <div class="date">2023/2/13</div>
+                    <div class="content"><textarea class="content" placeholder="content..." cols="80" rows="6"
+                            id="content3"></textarea></div>
+                    <div class="remark">
+                        <div class="share"></div>
+                        <div class="comment"></div>
+                        <div class="like"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("content1").style.backgroundColor = "rgba(0,0,0,0)";
+        document.getElementById("content2").style.backgroundColor = "rgba(0,0,0,0)";
+        document.getElementById("content3").style.backgroundColor = "rgba(0,0,0,0)";
+    </script>
+</body>
+
+</html>
