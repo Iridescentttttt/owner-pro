@@ -2,6 +2,7 @@ package com.example.mapper;
 
 import com.example.pojo.User;
 import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
@@ -9,6 +10,7 @@ import org.apache.ibatis.annotations.Select;
  * @author HDH
  * @version 1.0
  */
+@Mapper
 public interface UserMapper {
     /**
      * 根据用户名和密码查询用户对象
@@ -16,7 +18,7 @@ public interface UserMapper {
      * @param password
      * @return
      */
-    @Select("select * from tb_user where username = #{username} and password = #{password}")
+    @Select("select * from t_user where username = #{username} and password = #{password}")
     User select(@Param("username") String username, @Param("password")  String password);
 
     /**
@@ -24,13 +26,13 @@ public interface UserMapper {
      * @param username
      * @return
      */
-    @Select("select * from tb_user where username = #{username}")
+    @Select("select * from t_user where username = #{username}")
     User selectByUsername(String username);
 
     /**
      * 添加用户
      * @param user
      */
-    @Insert("insert into tb_user values(null,#{username},#{password})")
+    @Insert("insert into t_user values(null,#{username},#{password})")
     void add(User user);
 }

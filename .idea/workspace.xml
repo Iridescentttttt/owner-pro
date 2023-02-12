@@ -46,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "D:/hdh/Documents/github/owner-pro/Last/src/main/java/com/example/web/request",
+    "last_opened_file_path": "D:/hdh/Documents/github/owner-pro/Last/src/main/java/com/example/web",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -56,11 +56,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\java\com\example\web\request" />
       <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\java\com\example\web" />
+      <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\java\com\example\utils" />
+      <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\resources\templates" />
+      <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\java\com\example\web\request" />
       <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main" />
-      <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\resources\com.example.mapper" />
-      <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\hdh\Documents\github\owner-pro\newone\src\main" />
@@ -69,6 +69,8 @@
       <recent name="web.old" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.last" />
+      <recent name="com.example" />
       <recent name="com.example.backend" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -168,7 +170,9 @@
       <workItem from="1675776853843" duration="845000" />
       <workItem from="1676036022604" duration="604000" />
       <workItem from="1676097001275" duration="9778000" />
-      <workItem from="1676114853070" duration="3778000" />
+      <workItem from="1676114853070" duration="6972000" />
+      <workItem from="1676157265474" duration="3131000" />
+      <workItem from="1676164382974" duration="3931000" />
     </task>
     <servers />
   </component>
