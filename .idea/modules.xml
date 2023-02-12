@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Last/Last.iml" filepath="$PROJECT_DIR$/Last/Last.iml" />
-      <module fileurl="file://$PROJECT_DIR$/back-end/back-end.iml" filepath="$PROJECT_DIR$/back-end/back-end.iml" />
-      <module fileurl="file://$PROJECT_DIR$/newone/newone.iml" filepath="$PROJECT_DIR$/newone/newone.iml" />
       <module fileurl="file://$PROJECT_DIR$/owner-pro.iml" filepath="$PROJECT_DIR$/owner-pro.iml" />
       <module fileurl="file://$PROJECT_DIR$/ownerpro-bac-end/ownerpro-bac-end.iml" filepath="$PROJECT_DIR$/ownerpro-bac-end/ownerpro-bac-end.iml" />
     </modules>

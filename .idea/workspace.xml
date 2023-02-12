@@ -3,11 +3,6 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="AutomaticModuleUnloader">
-    <loaded-modules>
-      <module name="owner-pro" />
-    </loaded-modules>
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="28d12326-f022-4f3f-b252-00991b715fb1" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "D:/hdh/Documents/github/owner-pro/Last/src/main/java/com/example/web",
+    "last_opened_file_path": "D:/hdh/Documents/github/owner-pro/Last/src/main/resources/templates",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -56,13 +51,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\resources\templates" />
+      <recent name="D:\hdh\Documents\github\owner-pro\前端" />
       <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\java\com\example\web" />
       <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\java\com\example\utils" />
-      <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\resources\templates" />
       <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\java\com\example\web\request" />
-      <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\hdh\Documents\github\owner-pro\Last\src\main\webapp" />
       <recent name="D:\hdh\Documents\github\owner-pro\newone\src\main" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -172,7 +168,7 @@
       <workItem from="1676097001275" duration="9778000" />
       <workItem from="1676114853070" duration="6972000" />
       <workItem from="1676157265474" duration="3131000" />
-      <workItem from="1676164382974" duration="3931000" />
+      <workItem from="1676164382974" duration="6258000" />
     </task>
     <servers />
   </component>
